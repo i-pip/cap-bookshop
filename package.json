@@ -6,7 +6,8 @@
   "license": "ISC",
   "dependencies": {
     "@sap/cds": "^3.18.3",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "hdb": "^0.17.1"
   },
   "engines": {
     "node": "^8.9"
@@ -22,17 +23,11 @@
   "cds": {
     "requires": {
       "db": {
-        "kind": "sqlite",
+        "kind": "hana",
         "model": [
           "db",
-          "srv",
-          "app",
-          "./schema.cds",
-          "./services.cds"
-        ],
-        "credentials": {
-          "database": "my.db"
-        }
+          "srv"
+        ]
       }
     }
   }
