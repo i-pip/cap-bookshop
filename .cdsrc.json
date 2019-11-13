@@ -1,6 +1,22 @@
 {
-    "build": {
-        "target": ".",
-        "tasks": []
+  "build": {
+    "target": ".",
+    "tasks": []
+  },
+  "auth": {
+    "passport": {
+      "strategy": ["JWT", "mock"],
+      "users": {
+        "alice": {
+          "password": "secret",
+          "userAttributes": { "country": "US" }
+        },
+        "admin": {
+          "password": "secret",
+          "userAttributes": { "country": "US" },
+          "roles": ["admin"]
+        }
+      }
     }
+  }
 }
