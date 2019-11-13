@@ -1,6 +1,22 @@
 {
   "build": {
-    "target": "gen",
+    "target": ".",
     "tasks": []
+  },
+  "auth": {
+    "passport": {
+      "strategy": "mock",
+      "users": {
+        "alice": {
+          "password": "secret",
+          "userAttributes": { "country": "US" }
+        },
+        "admin": {
+          "roles": ["admin"],
+          "password": "secret",
+          "userAttributes": { "country": "US" }
+        }
+      }
+    }
   }
 }
