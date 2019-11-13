@@ -21,11 +21,14 @@
   "cds": {
     "requires": {
       "db": {
-        "kind": "hana",
+        "kind": "sqlite",
         "model": [
           "db",
           "srv"
-        ]
+        ],
+        "credentials": {
+          "database": "my.db"
+        }
       }
     }
   },
