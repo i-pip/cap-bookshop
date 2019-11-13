@@ -16,9 +16,6 @@
     "deploy": "cds deploy",
     "start": "cds run"
   },
-  "devDependencies": {
-    "sqlite3": "^4.1.0"
-  },
   "cds": {
     "requires": {
       "db": {
