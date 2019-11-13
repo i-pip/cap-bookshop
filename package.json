@@ -15,5 +15,8 @@
         "build": "cds build/all --clean",
         "deploy": "cds deploy",
         "start": "cds run"
+    },
+    "devDependencies": {
+        "sqlite3": "^4.1.0"
     }
 }
